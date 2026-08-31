@@ -83,8 +83,8 @@ export function ModalFooter({ onCancel, onSave }) {
 export function DataTable({ columns, rows, keyField }) {
   if (!rows.length) return <p className="fv-empty">Sin registros aún.</p>;
   return (
-    <div className="table-responsive">
-      <table className="table table-dark table-hover table-striped">
+    <div className="table-responsive fv-table-wrap">
+      <table className="table table-hover table-striped fv-table">
         <thead>
           <tr>
             {columns.map(col => <th key={col.key}>{col.label}</th>)}
@@ -109,7 +109,7 @@ export function DataTable({ columns, rows, keyField }) {
 /* ── Shell de página ── */
 export function PageShell({ title, subtitle, onNuevo, children }) {
   return (
-    <div>
+    <div className="fv-page">
       <div className="fv-page-header">
         <div>
           <h2 className="fv-page-title">{title}</h2>
@@ -119,7 +119,7 @@ export function PageShell({ title, subtitle, onNuevo, children }) {
           <button className="btn btn-retro" onClick={onNuevo}>+ Nuevo</button>
         )}
       </div>
-      <div className="fv-card">
+      <div className="fv-card fv-content-card">
         {children}
       </div>
     </div>

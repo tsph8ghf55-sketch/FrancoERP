@@ -14,7 +14,7 @@ export default function Navbar({ activePage = "" }) {
 
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark px-4 animate__animated animate__fadeInDown">
-      <a className="navbar-brand d-flex align-items-center" href="/inicio">
+      <a className="navbar-brand d-flex align-items-center" href="/">
         <img src="/IMG/logo.png.jpg" alt="Logo" height="50" className="me-2" />
         <span className="fs-4">Franco el Viajero</span>
       </a>
@@ -29,7 +29,7 @@ export default function Navbar({ activePage = "" }) {
       <div className="collapse navbar-collapse justify-content-end" id="menuNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className={`nav-link ${isActive("inicio")}`} href="/inicio">
+            <a className={`nav-link ${isActive("inicio")}`} href="/">
               Inicio
             </a>
           </li>

@@ -128,7 +128,7 @@ export default function Tienda() {
   };
 
   return (
-    <>
+    <div className="public-page">
       <Navbar activePage="tienda" />
 
       {/* Ícono del carrito flotante en la navbar: colócalo dentro de tu <Navbar> si prefieres,
@@ -265,6 +265,6 @@ export default function Tienda() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

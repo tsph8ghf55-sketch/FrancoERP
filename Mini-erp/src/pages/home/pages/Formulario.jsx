@@ -56,7 +56,7 @@ export default function Formulario({ onSubmitInscripcion }) {
   };
 
   return (
-    <>
+    <div className="public-page form-page">
       <Navbar activePage="formulario" />
 
       <header className="text-center mt-5">
@@ -149,6 +149,6 @@ export default function Formulario({ onSubmitInscripcion }) {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }

@@ -14,9 +14,9 @@ export default function Navbar() {
   const label = LABELS[pathname] || "Panel";
 
   return (
-    <header style={{
-      background: "#1c1c1c",
-      borderBottom: "1px solid #333333",
+    <header className="fv-topbar" style={{
+      background: "#111111",
+      borderBottom: "1px solid #222222",
       height: "50px",
       padding: "0 24px",
       display: "flex",
@@ -30,7 +30,7 @@ export default function Navbar() {
         <div style={{
           width: "3px",
           height: "16px",
-          background: "#888888",
+          background: "#e07e2d",
           borderRadius: "2px",
         }} />
         <span style={{
@@ -38,26 +38,26 @@ export default function Navbar() {
           fontWeight: 700,
           letterSpacing: "0.06em",
           textTransform: "uppercase",
-          color: "#e4e4e4",
+          color: "#f7efe3",
         }}>{label}</span>
       </div>
 
       <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
-        <span style={{ fontSize: "12px", color: "#555555" }}>Admin</span>
+        <span style={{ fontSize: "12px", color: "#f7efe3" }}>Admin</span>
         <button
           onClick={() => navigate("/")}
           style={{
             background: "transparent",
-            border: "1px solid #464646",
-            color: "#888888",
+            border: "1px solid #4c4c4c",
+            color: "#e4d7c4",
             padding: "4px 12px",
             borderRadius: "4px",
             fontSize: "12px",
             cursor: "pointer",
             transition: "all 0.15s",
           }}
-          onMouseEnter={e => { e.target.style.borderColor = "#888888"; e.target.style.color = "#e4e4e4"; }}
-          onMouseLeave={e => { e.target.style.borderColor = "#464646"; e.target.style.color = "#888888"; }}
+          onMouseEnter={e => { e.target.style.borderColor = "#e07e2d"; e.target.style.color = "#fff2e6"; }}
+          onMouseLeave={e => { e.target.style.borderColor = "#4c4c4c"; e.target.style.color = "#e4d7c4"; }}
         >
           Cerrar sesión
         </button>

@@ -19,34 +19,22 @@
   color: #ffc107 !important;
 }
 
-body{
-    background-image: url(IMG/pexels-chiecharon-705075.jpg);
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    font-family: "Roboto", sans-serif;
+.form-page {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
 
+.form-page > section:not(.hero-section) {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-a{
-    padding: 1em;
-    text-align: center;
-    margin: 0;
-    font-size: larger;
-    text-decoration: none;
-    color: rgb(216, 13, 13);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-h1{
+
+.form-page h1{
     text-align: center;
     color: #222;
     margin-bottom: 1em;
-
 }
 
-section{
+.form-page section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2em;
@@ -54,14 +42,15 @@ section{
     align-items: center;
 }
 
-img{
+.form-page > section img{
     width: 100%;
     max-width: 800px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-input[type], select {
+.form-page input[type],
+.form-page select {
     display: block;
     margin: 0 auto;
     border: 1px solid #ccc;
@@ -71,7 +60,7 @@ input[type], select {
     color: #333;
     
 }
-.form{
+.form-page .form{
     background-color: rgba(255, 255, 255, 0.85); 
     padding: 2em;
     border-radius: 15px;
@@ -81,7 +70,7 @@ input[type], select {
     text-align: center;  
     
 }
-textarea{
+.form-page textarea{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -91,7 +80,7 @@ textarea{
     box-sizing: border-box;
     font-size: 1em;
 }
-.reflex{
+.form-page .reflex{
     background-color: rgba(255, 255, 255, 0.85); 
     padding: 2em;
     border-radius: 15px;
@@ -99,6 +88,18 @@ textarea{
     width: 80%;
     margin: auto;
     text-align: center;  
-    font-family: cursive;
+    font-family: inherit;
+}
+
+@media (max-width: 768px) {
+    .form-page section {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+    }
+
+    .form-page .form,
+    .form-page .reflex {
+        width: 100%;
+    }
 }
 

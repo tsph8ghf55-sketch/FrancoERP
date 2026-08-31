@@ -12,7 +12,7 @@ import "../styles/inicio.css";
  */
 export default function Inicio() {
   return (
-    <>
+    <div className="public-page">
       <Navbar activePage="inicio" />
 
       <section className="hero-section text-white text-center p-5">
@@ -317,6 +317,6 @@ export default function Inicio() {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }

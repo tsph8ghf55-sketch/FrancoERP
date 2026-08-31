@@ -42,9 +42,9 @@ const linkActive = {
 
 export default function Sidebar() {
   return (
-    <aside style={{
-      width: "185px",
-      minWidth: "185px",
+    <aside className="fv-sidebar" style={{
+      width: "220px",
+      minWidth: "220px",
       minHeight: "100vh",
       background: "#1c1c1c",
       borderRight: "1px solid #333333",
